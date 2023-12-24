@@ -1,10 +1,9 @@
-import './App.css';
-import BosscrystalCalulator from './pages/bosscrystalCalculator/BosscrystalCalulator';
+import { BosscrystalCalculator } from './pages/bosscrystalCalculator/BosscrystalCalculator';
 
 function App() {
 	return (
 		<div className='App'>
-			<BosscrystalCalulator />
+			<BosscrystalCalculator name={'BosscrystalCalculator'} />
 		</div>
 	);
 }
