@@ -1,7 +1,27 @@
-import { BossProps } from '../../utils/props';
+import { List } from '@mui/material';
+import { BossEntries } from '../../components/BossEntries';
+import bossList from '../../data/bossList.json';
+import { PageContainer } from './BosscrystalCalculator.styles';
 
-const BosscrystalCalculator = (props: BossProps) => {
-	return <div>{props.name}</div>;
+const BosscrystalCalculator = () => {
+	return (
+		<PageContainer>
+			<section>
+				<List disablePadding>
+					{bossList.map((boss) => (
+						<BossEntries
+							name={boss.name}
+							value={boss.value}
+							difficulty={boss.difficulty}
+							lowestDifficulty={boss.lowestDifficulty}
+							initialValue={boss.initialValue}
+							id={boss.id}
+						/>
+					))}
+				</List>
+			</section>
+		</PageContainer>
+	);
 };
 
 export { BosscrystalCalculator };

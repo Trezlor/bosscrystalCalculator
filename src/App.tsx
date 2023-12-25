@@ -1,11 +1,11 @@
 import { BosscrystalCalculator } from './pages/bosscrystalCalculator/BosscrystalCalculator';
 
-function App() {
+const App = () => {
 	return (
 		<div className='App'>
-			<BosscrystalCalculator name={'BosscrystalCalculator'} />
+			<BosscrystalCalculator />
 		</div>
 	);
-}
+};
 
 export default App;
