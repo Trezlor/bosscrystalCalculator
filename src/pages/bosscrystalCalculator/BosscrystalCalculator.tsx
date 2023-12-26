@@ -16,6 +16,7 @@ const BosscrystalCalculator = () => {
 							lowestDifficulty={boss.lowestDifficulty}
 							initialValue={boss.initialValue}
 							id={boss.id}
+							key={boss.id}
 						/>
 					))}
 				</List>

@@ -1,29 +1,42 @@
-import { Button, Divider, ListItem, Stack } from '@mui/material';
+import { Button, Divider, Grid, ListItem, Stack } from '@mui/material';
 import { BossProps } from '../utils/props';
 
 const BossEntries = (props: BossProps) => {
 	return (
 		<>
 			<ListItem
+				key={props.id}
 				disablePadding
 				sx={props.lowestDifficulty && props.name !== 'Zakum' ? { mt: 4 } : { mt: 0 }}
 			>
-				<Stack
+				<Grid
 					direction='row'
 					spacing={2}
-					divider={
-						<Divider
-							orientation='vertical'
-							flexItem
-						/>
-					}
+					width='100%'
+					justifyContent='center'
+					bgcolor={'white'}
+					px={2}
+					py={1}
 				>
 					<img
-						src={require(`../assets/bigSizeImages/${props.name.replace(/\s+/g, '')}.png`)}
+						src={require(`../assets/smallSizeImages/${props.name.replace(/\s+/g, '')}.png`)}
 						alt={props.name}
+						loading='lazy'
+						style={{ width: 50, height: 50 }}
 					/>
-					<Button variant='contained'>Contained</Button>
-				</Stack>
+					<img
+						src={require(`../assets/bossDifficulty/${props.difficulty}.png`)}
+						alt={props.name}
+						loading='lazy'
+						style={{ width: 100 }}
+					/>
+					<Button
+						sx={{ height: 'fit-content' }}
+						variant='contained'
+					>
+						More
+					</Button>
+				</Grid>
 			</ListItem>
 		</>
 	);
