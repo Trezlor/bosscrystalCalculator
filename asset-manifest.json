@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bosscrystalCalculator/static/css/main.867fb44d.css",
+    "main.js": "/bosscrystalCalculator/static/js/main.7518f75a.js",
+    "index.html": "/bosscrystalCalculator/index.html",
+    "main.867fb44d.css.map": "/bosscrystalCalculator/static/css/main.867fb44d.css.map",
+    "main.7518f75a.js.map": "/bosscrystalCalculator/static/js/main.7518f75a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.867fb44d.css",
+    "static/js/main.7518f75a.js"
+  ]
+}
