@@ -1,20 +1,48 @@
 *,
 *:before,
 *:after {
-	/*Box model stuff*/
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	border: 0;
-	outline: 0;
-	/*Typography stuff*/
-	text-decoration: none;
-	/*Miscellaneous*/
-	box-sizing: border-box;
-	list-style: none;
 }
 
 body {
+	background-color: rgb(216, 216, 216);
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
 		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-	background-color: bisque;
+}
+
+.difficultyEasy span,
+.difficultyNormal span,
+.difficultyHard span {
+	color: white;
+}
+.difficultyChaos span {
+	color: #eeccaa;
+}
+.difficultyExtreme span {
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(#ee7722, #ee4455);
+	background-clip: text;
+}
+
+.difficultyEasy {
+	background: linear-gradient(#bbbbbb, #666666);
+	border-image: linear-gradient(#bbbbbb, #666666) 1 10%;
+}
+.difficultyNormal {
+	background: linear-gradient(#44aabb, #227799);
+	border-image: linear-gradient(#44aabb, #227799) 1 10%;
+}
+.difficultyHard {
+	background: linear-gradient(#cc4477, #993355);
+	border-image: linear-gradient(#cc4477, #993355) 1 10%;
+}
+.difficultyChaos {
+	background: linear-gradient(#444444, #222222);
+	border-image: linear-gradient(-90deg, #bb9966, #ddbb88, #bb9966) 1 10%;
+}
+.difficultyExtreme {
+	background: linear-gradient(#444444, #333333);
+	border-image: linear-gradient(#ee3366, #ee7722) 1 10%;
 }
